@@ -1,0 +1,76 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: darkgray;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    color: white;
+    align-items: center;
+    border-radius: 10px;
+    
+}
+.links a{
+    padding: 30px;
+    flex-grow: 6;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    width: fit-content;
+    
+}
+.links a:hover{
+    background-color: darkcyan;
+}
+.links{
+    margin-left: 500px;
+}
+.name{
+    margin-left: 100px;
+    font-size: 35px;
+}
+.int{
+    background-color: azure;
+}
+.int p{
+    font-size: 20px;
+}
+.skills{
+    display: flex;
+    flex-direction: column;
+    background-color: gray;
+    align-items: end;
+}
+.skill a{
+    align-items: end;
+    list-style-type:circle;
+    color:white;
+    font-size: 25px;
+    text-decoration: none;
+}
+video{
+    width: 100%;
+    height: auto;
+}
+.midtext{
+    font-size: 25px;
+    background-color: aquamarine;
+    color: black;
+    height:auto;
+    width: fit-content;
+}
+.footer{
+    color: white;
+    font-size: 30px;
+    background-color: black;
+    border-radius: 50px;
+}
+.tx{
+    margin-left: 500px;
+}
+
+
