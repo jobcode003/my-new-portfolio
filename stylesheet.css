@@ -5,15 +5,15 @@ body{
     background-color: darkgray;
 }
 .header{
-    display: flex;
-    flex-direction: row;
+    display:grid;
+    grid-template-columns: 3fr 1fr 1fr 1fr;
     background-color: black;
     color: white;
     align-items: center;
     border-radius: 10px;
     justify-content: center;
 }
-
+/*
 .links {
     padding: 30px;
     flex-grow: 15;
@@ -42,21 +42,26 @@ body{
 .links a:hover{
     background-color: aquamarine;
     color: black;
-}
+}*/
 /*
 @media screen and (max-width: 780px) {
     .links{ margin-left: 50px;}
     .tx{margin-left: 50px;}
 }*/
+
 .name{
     margin-left: 50px;
-    font-size: 35px;
-    flex-grow: 3;
+    font-size: 30px;
     
     
 }
-
-
+.link{
+text-decoration: none;
+color: white;
+}
+.link:hover{
+    color: orange;
+}
 .int{
     background-color: azure;
 }
@@ -92,6 +97,7 @@ video{
     font-size: 20px;
     background-color: black;
     border-radius: 50px;
+    width: 100%;
 }
 .tx h2,p{
     margin-left: 100px;
