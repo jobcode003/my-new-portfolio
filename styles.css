@@ -1,0 +1,137 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: gray;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    color: orange;
+}
+ 
+@media (max-width: 600px) {
+    .header
+    {flex-direction: column;}
+
+}
+.si, .lo{
+    font-size: 1.4rem;
+    padding: 0.5em;
+    color: orange;
+    text-decoration: none;
+}
+.second-section{
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+    justify-content: space-between;
+    margin-top: 2em;
+}
+
+.faq{
+    text-decoration: none;
+    color: #000;
+    font-size: 1.2rem;
+    list-style-type: circle;
+}
+.but{
+    margin: 0.5em;
+    border-radius: 15%;
+    padding: 1em;
+    color: #000;
+    background-color: orange;
+}
+.but:hover{
+    background-color: #000;
+    color: orangered;
+}
+.faq:hover{
+    text-decoration: underline;
+    color: orangered;
+}
+.col-2{
+    width: 50%;
+    background-color:#fff;
+    color: orangered;
+}
+.col-3{
+    width: 75%;
+    background-color: #fff;
+    color: orangered;
+    text-align: center;
+}
+@media(max-width: 600px) {
+    .second-section{
+        flex-direction: column;
+    }
+   .col-1,
+   .col-2,
+   .col-3{
+    width: 100%;
+   } 
+}
+.section-three p{
+    font-size: 1.7rem;
+
+}
+@media (max-width: 600px) {
+.section-three{
+    font-size: 0.5rem;
+}    
+}
+.section-four{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+
+}
+.listfollow{
+    list-style-type:none;
+}
+.footer{
+    background-color: black;
+    color: yellow;
+    margin: 2em;
+    padding: 2em;
+    border: 5px solid;
+    border-radius: 15px;
+}
+.footer:hover{
+    background-color: orange;
+    color: #000;
+}
+.listfollow li{
+    font-size: 1rem;
+}
+.listfollow:hover{
+    font-size: 1.2rem;
+}
+
+@media (max-width: 600px) {
+    .section-four{
+        flex-direction: column;
+    }
+}
+.add-section{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    margin: 0px;
+    margin: 2em;
+    background-color:aqua;
+
+
+
+}
+
+@media (max-width:600px) {
+    .add-section{
+        flex-direction: column;
+    }
+    
+}
