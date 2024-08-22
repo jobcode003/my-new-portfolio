@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background:blue;
+        }
+        .container{
+            width: 250px;
+            height: 250px;
+            background-color:white;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            border-left: 5px dotted red;
+            border-right: 10px dashed  red;
+            border-radius: 50px;
+
+            
+        }
+        #text{
+            margin-top: 20px;
+            margin-bottom: 10px;
+            width: 200px;
+            height: 180px;
+            outline: 0;
+            border: 0;
+            color: blue;
+        }
+        #btn{
+            width: 180px;
+            border: 2px solid;
+            border-radius: 10px;
+            border-color: red;
+            height: 30px;
+            text-align: center;
+            color:blue;
+            font-size: 28px;
+            cursor: pointer;
+            
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div class="container">
+        <textarea  id="text">How are you Idah?
+            I hope you are doing great, as you listen to this i wanna let you know that i love you so much
+            and i cant wait to spend every millisecond of life with you... much love&#128536 from JOB
+        </textarea>
+        <button id="btn"> listen</button>
+
+    </div>
+
+    <script>
+        let speech= new SpeechSynthesisUtterance();
+        document.getElementById("btn").addEventListener('click',function(){
+            speech.text=document.querySelector("textarea").value;
+            window.speechSynthesis.speak(speech);
+        });
+    </script>
+</body>
+</html>
