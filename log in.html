@@ -1,0 +1,90 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    
+    <style>
+        .container{
+            margin: 0 auto 0;
+            width: 600px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color:rgba(23, 34, 56, 0.9);
+            
+
+        }
+        input{
+            padding: 6px;
+            width: 200px;
+            margin: 5px;
+
+
+        }
+        body{
+            background-image: url(pexels-olly-840996.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        label{
+            color: white;
+            font-size: 20px;
+        }
+        h1{
+            color: white;
+        }
+        #button,#clear{
+            color:black;
+            border-radius: 10px;
+            outline: hidden;
+            border: hidden;
+        }
+    </style>
+       
+</head>
+<body>
+   <div class="container">
+    <h1>REGISTER ACCOUNT</h1>
+    <form>
+        <label for="fullname">Fullname</label><br>
+        <input type="text" id="fullname"><br>
+
+        <label for="password">password</label><br>
+        <input type="password" id="password"><br>
+
+        <label for="confirm_password">confirm password</label><br>
+        <input type="password" id="confirm_password"><br>
+
+        <label for="email">Email</label><br>
+        <input type="email" id="email"><br>
+
+        <label for="pnumber">phone number</label><br>
+        <input type="number" id="pnumber"><br>
+
+        <label for="zipcode">zip code</label><br>
+        <input type="number" id="zipcode"><br>
+
+        <label for="card_Type">Card Type</label><br>
+        <input type="text" id="card_type"><br>
+
+        <label for="expire_date">Expiration date</label><br>
+        <input type="date" id="expire_date"><br>
+
+    
+
+        <input type="button" name="button" id="button" value="Register">
+        <input type="button" name="clear" id="clear" value="Clear form">
+    </form>
+   </div>
+    <script>
+        let fname=document.getElementById("fullname");
+        
+    </script>
+</body>
+</html>
